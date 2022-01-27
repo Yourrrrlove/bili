@@ -25,13 +25,12 @@ public class Silver2coin implements Task {
         //银瓜子兑换硬币汇率
         final int exchangeRate = 700;
         int silverNum = queryStatus.get("silver").getAsInt();
-
+log.info("测试银瓜子数量"+silverNum);
         if (silverNum < exchangeRate) {
             log.info("当前银瓜子余额为:{},不足700,不进行兑换", silverNum);
             return;
         } else {
             JsonObject resultJson = HttpUtil.doGet(ApiList.silver2coin);
-            log.info("测试银瓜子"+resultJson);
             int responseCode = resultJson.get(STATUS_CODE_STR).getAsInt();
             if (responseCode == 0) {
                 log.info("银瓜子兑换硬币成功");
