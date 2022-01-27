@@ -31,6 +31,7 @@ public class Silver2coin implements Task {
             return;
         } else {
             JsonObject resultJson = HttpUtil.doGet(ApiList.silver2coin);
+            log.info("测试银瓜子", STATUS_CODE_STR);
             int responseCode = resultJson.get(STATUS_CODE_STR).getAsInt();
             if (responseCode == 0) {
                 log.info("银瓜子兑换硬币成功");
