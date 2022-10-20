@@ -27,7 +27,7 @@ BILIBILI-HELPER
 
 **仓库地址：[JunzhouLiu/bilibili-match-prediction](https://github.com/JunzhouLiu/bilibili-match-prediction)**
 
-**请不要滥用相关API，让我们一起爱护B站 ❤**
+**请不要滥用相关API，让我们一起爱护B站  ❤**
 
 ## 功能列表
 
